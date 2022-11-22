@@ -7,9 +7,9 @@ on:
 
 jobs:
   build:
-    if: ${{ github.repository_owner == 'ProjectPythiaCookbooks' }}
+    if: ${{ github.repository_owner == 'esgf2' }}
     uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/build-book.yaml@main
 
   link-check:
-    if: ${{ github.repository_owner == 'ProjectPythiaCookbooks' }}
+    if: ${{ github.repository_owner == 'esgf2' }}
     uses: ProjectPythiaCookbooks/cookbook-actions/.github/workflows/link-checker.yaml@main
